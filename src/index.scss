@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body2 text-black px-1 bg-white;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 375px;
+    max-height: 667px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-iphone {
+    width: 375px;
+    height: 667px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .chat:nth-child(odd) {
+    justify-content: start;
+  }
+  .chat:nth-child(even) {
+    justify-content: end;
+  }
+}
